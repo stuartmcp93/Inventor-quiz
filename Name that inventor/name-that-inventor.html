@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Name that inventor!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="name-that-inventor-style.css"> 
+    <script src="https://randojs.com/1.0.0.js"></script>
+</head>
+<body>
+   
+    <div id="container">
+    <h1>Can you name the inventor?</h1>
+        <button type="button" class="start" id="start-button">Start the quiz!</button>
+        <button type="button" id="reset-button">Try again?</button>
+        <!--<div class = "scores" id="score-div">
+            <p class ="scores" id="correct"><span id="count-1"> </span></p>
+            <p class ="scores" id="wrong"><span id="count-2"> </span></p></p>
+        </div>-->
+            <img class="image" id="inventor-img" src="inventor-images/starter.jpg">
+            <div  id="game-over-div">
+                <p class= "game-over">You got <span id="final-score-correct"> </span> correct!</p>
+                <p class= "game-over">You got <span id="final-score-wrong"> </span> wrong!</p>
+            </div>
+            <div class="inventor-info" id="info-div">
+                        <h3 class="inventor-info" id="info-header">Inventor Bio</h3>
+                            <p class="inventor-info" id="born">Born:<span id="born-text"></span></p>
+                            <p class="inventor-info" id="died">Died:<span id="died-text"></span></p>
+                            <p class="inventor-info" id="famous-for"><span id="famous-text"></span></p>
+                                    <ol class="inventor-info" type="A"> Options:
+                                        <li class="inventor-info" id="option-a"></li>
+                                        <li class="inventor-info" id="option-b"></li>
+                                        <li class="inventor-info" id="option-c"></li>
+                                    </ol>
+            </div>
+            <form  id = "guess">
+                <input type="text" id="guess-input"  autocomplete="off" placeholder="Who is this inventor?">
+                <button type="button" id="guess-btn">Guess!</button>
+            </form>
+        
+
+        
+    </div>
+
+    
+
+    
+
+    
+
+</body>
+<script src="inventor-script.js"></script>
+
+</html>
